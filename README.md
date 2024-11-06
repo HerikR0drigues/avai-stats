@@ -3,7 +3,7 @@
 Este projeto é uma aplicação web que recupera estatísticas em tempo real de partidas do Avaí Futebol Clube utilizando a API do `Sofascore`. Ele foi construído com React no frontend e Node.js no backend.
 
 ### O Aplicativo está rodando para visualização no link:
-## https://herikr0drigues.github.io/avai-stats/
+# https://herikr0drigues.github.io/avai-stats/
 
 
 ## 🚀 Funcionalidades
@@ -50,15 +50,15 @@ Este projeto é uma aplicação web que recupera estatísticas em tempo real de 
 
 4. Acessar frontend/src/components e modificar a URL dentro de useEffect dos arquivos `AvaiPlayers.jsx`, `StatsTemporada.jsc` e `TabelaBrasileirao`, exemplo:
 
-- Original: 
-https://avai-stats-production.up.railway.app/api/players
-https://avai-stats-production.up.railway.app/api/statistics
-https://avai-stats-production.up.railway.app/api/standings
+    - Original: 
+    "https://avai-stats-production.up.railway.app/api/players"
+    "https://avai-stats-production.up.railway.app/api/statistics"
+    "https://avai-stats-production.up.railway.app/api/standings"
 
-- Como deve ficar:
-http://localhost:5000/api/players (Ou qualquer outro IP e/ou porta que deseja configurar)
-http://localhost:5000/api/statistics (Ou qualquer outro IP e/ou porta que deseja configurar)
-http://localhost:5000/api/standings (Ou qualquer outro IP e/ou porta que deseja configurar)
+    - Como deve ficar:
+    "http://localhost:5000/api/players" (Ou qualquer outro IP e/ou porta que deseja configurar)
+    "http://localhost:5000/api/statistics" (Ou qualquer outro IP e/ou porta que deseja configurar)
+    "http://localhost:5000/api/standings" (Ou qualquer outro IP e/ou porta que deseja configurar)
 
 ## 🧠 Lógica do Projeto
 
@@ -67,7 +67,7 @@ O projeto é dividido em duas partes principais:
 ### Backend
 
 1. **API do Sofascore**:
-   O backend realiza uma solicitação para a API pública do Sofascore, que fornece informações detalhadas sobre partidas de futebol, incluindo dados do Avaí Futebol Clube. A API retorna dados como:
+    O backend realiza uma solicitação para a API pública do Sofascore, que fornece informações detalhadas sobre partidas de futebol, incluindo dados do Avaí Futebol Clube. A API retorna dados como:
    - Resultados de jogos;
    - Estatísticas individuais de jogadores;
    - Desempenho geral do time.
