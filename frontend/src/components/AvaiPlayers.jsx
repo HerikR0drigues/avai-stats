@@ -9,7 +9,7 @@ const AvaiHeader = () => {
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/players');
+        const response = await axios.get('https://avai-stats-production.up.railway.app/api/players');
         setPlayers(response.data);
         setLoading(false);
       } catch (error) {
