@@ -47,16 +47,16 @@ Este projeto é uma aplicação web que recupera estatísticas em tempo real de 
     ```
 - No arquivo `server.js` tem as configurações, por padrão está a porta `5000`.
 
-4. Acessar frontend/src/components e modificar a URL dentro de useEffect dos arquivos `AvaiPlayers.jsx`, `StatsTemporada.jsc` e `TabelaBrasileirao`, exemplo:
- 
-    - Original: "https://avai-stats-production.up.railway.app/api/players"
-    - Original: "https://avai-stats-production.up.railway.app/api/statistics"
-    - Original: "https://avai-stats-production.up.railway.app/api/standings"
+4. Acessar frontend/src/components e modificar a URL dentro de useEffect dos arquivos:
 
-    - Modificado: "http://localhost:5000/api/players"
-    - Modificado: "http://localhost:5000/api/statistics"
-    - Modificado: "http://localhost:5000/api/standings"
-    - (Ou qualquer outro IP e/ou porta que deseja configurar)
+   - **AvaiPlayers.jsx**
+   - **StatsTemporada.jsx**
+   - **TabelaBrasileirao.jsx**
+
+5. Exemplo para ajuste (IP e porta fica a seu critério nas configurações do server.js)
+    - De: "https://avai-stats-production.up.railway.app/api/players" para "http://localhost:5000/api/players"
+    - De: "https://avai-stats-production.up.railway.app/api/statistics" para "http://localhost:5000/api/statistics"
+    - De: "https://avai-stats-production.up.railway.app/api/standings" para "http://localhost:5000/api/standings"
 
 ## 🧠 Lógica do Projeto
 
