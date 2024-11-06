@@ -2,8 +2,7 @@
 
 Este projeto é uma aplicação web que recupera estatísticas em tempo real de partidas do Avaí Futebol Clube utilizando a API do `Sofascore`. Ele foi construído com React no frontend e Node.js no backend.
 
-### O Aplicativo está rodando para visualização no link:
-# https://herikr0drigues.github.io/avai-stats/
+### O Aplicativo está rodando para visualização no link: [Avai-stats](https://herikr0drigues.github.io/avai-stats/)
 
 
 ## 🚀 Funcionalidades
@@ -46,19 +45,18 @@ Este projeto é uma aplicação web que recupera estatísticas em tempo real de 
     npm install
     npm start
     ```
-- No arquivo `server.js` tem as configurações, por padrão está a porta `5000`
+- No arquivo `server.js` tem as configurações, por padrão está a porta `5000`.
 
 4. Acessar frontend/src/components e modificar a URL dentro de useEffect dos arquivos `AvaiPlayers.jsx`, `StatsTemporada.jsc` e `TabelaBrasileirao`, exemplo:
+ 
+    - Original: "https://avai-stats-production.up.railway.app/api/players"
+    - Original: "https://avai-stats-production.up.railway.app/api/statistics"
+    - Original: "https://avai-stats-production.up.railway.app/api/standings"
 
-    - Original: 
-    "https://avai-stats-production.up.railway.app/api/players"
-    "https://avai-stats-production.up.railway.app/api/statistics"
-    "https://avai-stats-production.up.railway.app/api/standings"
-
-    - Como deve ficar:
-    "http://localhost:5000/api/players" (Ou qualquer outro IP e/ou porta que deseja configurar)
-    "http://localhost:5000/api/statistics" (Ou qualquer outro IP e/ou porta que deseja configurar)
-    "http://localhost:5000/api/standings" (Ou qualquer outro IP e/ou porta que deseja configurar)
+    - Modificado: "http://localhost:5000/api/players"
+    - Modificado: "http://localhost:5000/api/statistics"
+    - Modificado: "http://localhost:5000/api/standings"
+    - (Ou qualquer outro IP e/ou porta que deseja configurar)
 
 ## 🧠 Lógica do Projeto
 
