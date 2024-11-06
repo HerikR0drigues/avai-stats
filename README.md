@@ -2,6 +2,10 @@
 
 Este projeto é uma aplicação web que recupera estatísticas em tempo real de partidas do Avaí Futebol Clube utilizando a API do `Sofascore`. Ele foi construído com React no frontend e Node.js no backend.
 
+### O Aplicativo está rodando para visualização no link:
+## https://herikr0drigues.github.io/avai-stats/
+
+
 ## 🚀 Funcionalidades
 
 - Exibe estatísticas atualizadas da temporada do Avaí Futebol Clube na Série B de 2024.
@@ -37,12 +41,24 @@ Este projeto é uma aplicação web que recupera estatísticas em tempo real de 
 
 3. O backend está rodando ao vivo e não precisa de incicialização, mas caso queria rodar basta seguir os passos abaixo:
 
-3.1 Acessar o backend e instale as dependências e inicie o servidor: (Por padrão):
+- Acessar o backend e instale as dependências e inicie o servidor:
     ```bash
     npm install
     npm start
     ```
-    
+- No arquivo `server.js` tem as configurações, por padrão está a porta `5000`
+
+4. Acessar frontend/src/components e modificar a URL dentro de useEffect dos arquivos `AvaiPlayers.jsx`, `StatsTemporada.jsc` e `TabelaBrasileirao`, exemplo:
+
+- Original: 
+https://avai-stats-production.up.railway.app/api/players
+https://avai-stats-production.up.railway.app/api/statistics
+https://avai-stats-production.up.railway.app/api/standings
+
+- Como deve ficar:
+http://localhost:5000/api/players (Ou qualquer outro IP e/ou porta que deseja configurar)
+http://localhost:5000/api/statistics (Ou qualquer outro IP e/ou porta que deseja configurar)
+http://localhost:5000/api/standings (Ou qualquer outro IP e/ou porta que deseja configurar)
 
 ## 🧠 Lógica do Projeto
 
