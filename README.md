@@ -76,6 +76,11 @@ O projeto é dividido em duas partes principais:
 3. **Servidor Node.js**:
    O servidor backend foi construído utilizando Node.js e Express. Ele escuta as requisições feitas pelo frontend e responde com as estatísticas do Avaí em tempo real. O backend também gerencia o roteamento das requisições e a comunicação com a API externa.
 
+4. **Endpoints**:
+    - /api/players
+    - /api/statistics
+    - /standings
+     
 ### Frontend
 
 1. **React**:
