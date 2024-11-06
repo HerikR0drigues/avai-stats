@@ -5,9 +5,9 @@ const API_URL = 'https://www.sofascore.com/api/v1/team/7315/players';
 const fetchPlayers = async () => {
 
   try {
-    const response = await axios.get('API_URL', {
+    const response = await axios.get(API_URL, {
       headers: {
-        'User-Agent': 'axios/1.7.7',  // Ou qualquer outro User-Agent que funcione no seu localhost
+        'User-Agent': 'axios/1.7.7',
         'Accept': 'application/json',
       }
     });
