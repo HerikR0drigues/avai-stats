@@ -53,7 +53,7 @@ Este projeto é uma aplicação web que recupera estatísticas em tempo real de 
    - **StatsTemporada.jsx**
    - **TabelaBrasileirao.jsx**
 
-5. Exemplo para ajuste (IP e porta fica a seu critério nas configurações do server.js)
+5. Exemplo para ajuste (IP e PORTA ficam a seu critério nas configurações do server.js)
     - De: "https://avai-stats-production.up.railway.app/api/players" para "http://localhost:5000/api/players"
     - De: "https://avai-stats-production.up.railway.app/api/statistics" para "http://localhost:5000/api/statistics"
     - De: "https://avai-stats-production.up.railway.app/api/standings" para "http://localhost:5000/api/standings"
