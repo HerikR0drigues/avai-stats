@@ -8,7 +8,7 @@ const TabelaBrasileirao = () => {
   useEffect(() => {
     const fetchTabela = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/standings');
+        const response = await axios.get('https://avai-stats-production.up.railway.app/api/standings');
         setTabela(response.data);
         setLoading(false);
       } catch (error) {
