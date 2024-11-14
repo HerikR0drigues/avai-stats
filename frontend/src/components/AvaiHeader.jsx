@@ -5,7 +5,7 @@ import StadiumImage from '../assets/stadium-image.jpg'; // Certifique-se de que 
 
 function AvaiHeader() {
     return (
-        <div className="w-full max-w-5xl rounded-lg shadow-md overflow-hidden relative flex items-center space-x-4 p-4">
+        <>
             <div
                 className="absolute inset-0 bg-cover bg-center filter blur-sm opacity-95"
                 style={{
@@ -16,7 +16,7 @@ function AvaiHeader() {
                 <img src={AvaiLogo} alt="Logo do Avaí" className="w-20 h-24" />
                 <h1 className="text-2xl font-bold text-white">Avaí FC</h1>
             </div>
-        </div>
+        </>
     );
 }
 

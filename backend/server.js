@@ -3,9 +3,11 @@ const cors = require('cors');
 const standingsRoutes = require('./routes/standingsRoutes');
 const statisticsRoutes = require('./routes/statisticsRoutes'); 
 const playersRoutes = require('./routes/playersRoutes'); 
+const lastGamesRoutes = require('./routes/lastGamesRoutes'); 
+const nextGameRoutes = require('./routes/nextGameRoutes'); 
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Usa a porta do Render ou a 5000 como fallback
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json()); 
@@ -14,6 +16,9 @@ app.use(express.json());
 app.use('/api/standings', standingsRoutes);
 app.use('/api/statistics', statisticsRoutes);
 app.use('/api/players', playersRoutes);
+app.use('/api/lastgames', lastGamesRoutes);
+app.use('/api/nextgame', nextGameRoutes);
+
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

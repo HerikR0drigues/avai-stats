@@ -3,8 +3,8 @@ import React from 'react';
 
 function Header() {
   return (
-    <header className='bg-backgroundPurple shadow-sm'>
-      <div className='justify-between max-w-5xl mx-auto px-4 py-4 flex items-center'>
+    <header className='bg-avaiThird shadow-sm'>
+      <div className='justify-between max-w-7xl mx-auto px-4 py-4 flex items-center'>
         <i className='text-white font-pixelfy text-3xl font-bold'>Herik<span className='text-spanHeader'>.dev</span></i>
         
         <div className='hidden md:flex flex-col items-center'>
