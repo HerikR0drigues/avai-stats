@@ -9,7 +9,7 @@ const LastGames = () => {
     useEffect(() => {
         const fetchLastGames = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/lastgames');
+                const response = await axios.get('https://avai-stats-production.up.railway.app/api/lastgames');
                 setLastGames(response.data);
                 setLoading(false);
             } catch (error) {

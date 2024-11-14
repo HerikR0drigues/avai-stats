@@ -9,7 +9,7 @@ const StatsTemporada = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get(' http://localhost:5000/api/statistics');
+        const response = await axios.get('https://avai-stats-production.up.railway.app/api/statistics');
         setStatistics(response.data);
         setLoading(false);
       } catch (error) {
